@@ -33,6 +33,7 @@
 	],
 	"dependencies": {
 		"@streamhue/conf": "^7.0.0",
+		"husky": "^4.2.1",
 		"type-fest": "^0.7.1"
 	},
 	"devDependencies": {
@@ -47,5 +48,11 @@
 			"node",
 			"browser"
 		]
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "npm test",
+			"pre-push": "npm test"
+		}
 	}
 }
